@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class PointCounter : MonoBehaviour
 {
     public Text pointText;
-    private static int points = 0;
+    public Text endText;
+    public static int points = 0;
 
     // Start is called before the first frame update
     void Update()
     {
-        pointText.text = "Score :" + points.ToString();
+        pointText.text = endText.text = "Score :" + points.ToString();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -30,10 +31,5 @@ public class PointCounter : MonoBehaviour
 
         }
     }
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
    
 }

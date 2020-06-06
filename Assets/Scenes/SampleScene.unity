@@ -393,7 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5313856876308589009, guid: deb3ce6744a751e48ac164e74fc96525, type: 3}
   speed: 1
-  text: {fileID: 1677152240}
+  score: {fileID: 1677152240}
+  endscore: {fileID: 554143643}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,8 @@ public class EnemySpawn : MonoBehaviour
 {
     public Rigidbody2D enemy;
     public float speed = 1f;
-    public Text text;
+    public Text score;
+    public Text endscore;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +26,14 @@ public class EnemySpawn : MonoBehaviour
     {
         Rigidbody2D instance = Instantiate(enemy, transform);
         instance.velocity = Vector2.left * speed;
-        instance.GetComponent<PointCounter>().pointText = text;
+        var counter = instance.GetComponent<PointCounter>();
+        counter.pointText = score;
+        counter.endText = endscore;
     }
 
     public void Restart1()
     {
+        PointCounter.points = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
