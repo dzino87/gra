@@ -25,7 +25,7 @@ public class sc : MonoBehaviour
         Rigidbody2D instance = Instantiate(bullet, transform);
         instance.transform.parent = null;
         instance.velocity = Vector2.left * bulletSpeed;
-        print("spawn bullet");
+        //print("spawn bullet");
         bullets.Add(instance);
     }
 }

@@ -17,13 +17,13 @@ public class PointCounter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("PointCounter->OnTriggerEnter2D");
-        print(points);
+        //print("PointCounter->OnTriggerEnter2D");
+        //print(points);
         if (other.gameObject.tag == "bullet")
         {
             if (other.GetComponent<Rigidbody2D>().velocity.x > 0)
             {
-                print("Bullet Colision");
+                //print("Bullet Colision");
                 points += 1;
                 Destroy(other.gameObject);
                 Destroy(gameObject);

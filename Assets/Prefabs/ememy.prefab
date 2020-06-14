@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 211126535542579724, guid: 6b740bd679281ea4db8f747469664f70, type: 3}
-  shotTime: 4
-  bulletSpeed: 4
+  shotTime: 500
+  bulletSpeed: 0.1
 --- !u!114 &6455157759093179355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointText: {fileID: 0}
+  endText: {fileID: 0}
 --- !u!61 &-7623388648877507287
 BoxCollider2D:
   m_ObjectHideFlags: 0

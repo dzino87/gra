@@ -298,7 +298,7 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
@@ -373,7 +373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431012862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.64, y: -1.47, z: 0}
+  m_LocalPosition: {x: 11.74, y: -1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -393,6 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5313856876308589009, guid: deb3ce6744a751e48ac164e74fc96525, type: 3}
   speed: 1
+  bulletTime: 4
+  bulletSpeed: 6
   score: {fileID: 1677152240}
   endscore: {fileID: 554143643}
 --- !u!1 &519420028
@@ -667,7 +669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 211126535542579724, guid: 6b740bd679281ea4db8f747469664f70, type: 3}
-  speed: 2
+  speed: 5
+  shotDelay: 0.015
+  maxBullets: 6
 --- !u!4 &661181989
 Transform:
   m_ObjectHideFlags: 0
